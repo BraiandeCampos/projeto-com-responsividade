@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    /* remove a margem */
+    padding: 0;
+    /* remove o preenchimento */
+    box-sizing: border-box;
+    /* inclui a borda e o preenchimento na largura total do elemento */
+    font-family: 'Oswald', sans-serif;
+    /* define a fonte para todo o documento */
+    font-weight: 400;
+    /* define a espessura da fonte */
+    color: #5D5D7D;
+    /* define a cor do texto */
+}
+
+.container {
+    height: 100vh;
+    /* define a altura da tela */
+    width: 100vw;
+    /* define a largura da tela */
+}
+
+.left-section {
+    display: inline-block;
+    /* define o layout como flexbox*/
+    width: 60%;
+    /* define a largura da seção esquerda */
+    padding-left: 136px;
+    /* define o preenchimento à esquerda da seção esquerda */
+    margin-top: 20%;
+    /* define a margem superior da seção esquerda */
+}
+
+.right-section {
+    display: inline-block;
+    /* define o layout como flexbox */
+    background-color: rgba(93, 93, 125, 0.16);
+    /* define a cor de fundo da seção direita */
+    height: 100vh;
+    /* define a altura da seção direita */
+    width: 40%;
+    /* define a largura da seção direita */
+    position: absolute;
+    /* define a posição como absoluta */
+}
+
+img {
+    position: relative;
+    /* define a posição como relativa */
+    top: 25%;
+    /* move a imagem para baixo */
+    right: 130px;
+    /* move a imagem para a esquerda */
+}
+
+h1 {
+    font-size: 70px;
+    /* define o tamanho da fonte do título */
+    line-height: 80px;
+    /* define a altura da linha do título */
+    width: 368px;
+    /* define a largura do título */
+}
+
+p {
+    font-size: 28px;
+    /* define o tamanho da fonte do parágrafo */
+    line-height: 48px;
+    /* define a altura da linha do parágrafo */
+    opacity: 0.6;
+    /* define a opacidade do parágrafo */
+    margin: 15px 0;
+    /* define a margem do parágrafo */
+    width: 540px;
+    /* define a largura do parágrafo */
+}
+
+button {
+    width: 269px;
+    /* define a largura do botão */
+    height: 62px;
+    /* define a altura do botão */
+    background: #9499ea;
+    /* define a cor de fundo do botão */
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    /* define a sombra do botão */
+    border: none;
+    /* remove a borda do botão */
+    border-radius: 30px;
+    /* define o raio da borda do botão */
+    font-size: 24px;
+    /* define o tamanho da fonte do botão */
+    line-height: 36px;
+    /* define a altura da linha do botão */
+    text-align: center;
+    /* alinha o texto ao centro do botão */
+    color: #FFFFFF;
+    /* define a cor do texto do botão */
+    cursor: pointer;
+    /* muda o cursor para indicar que o botão é clicável */
+}
+
+button:hover {
+    /* define o estilo do botão quando o mouse estiver sobre ele */
+    opacity: 0.8;
+    /* reduz a opacidade do botão */
+}
+
+button:active {
+    /* define o estilo do botão quando ele estiver sendo clicado */
+    opacity: 0.05;
+    /* reduz ainda mais a opacidade do botão */
+}
+
+a {
+    font-size: 28px;
+    /* define o tamanho da fonte do link */
+    line-height: 41px;
+    /* define a altura da linha do link */
+    margin-right: 41px;
+    /* define a margem direita do link */
+}
+
+a:nth-child(2) {
+    /* define o estilo do segundo link */
+    opacity: 0.4;
+    /* reduz a opacidade do segundo link */
+}
+
+a:hover {
+    /* define o estilo do link quando o mouse estiver sobre ele */
+    opacity: 0.4;
+    /* reduz a opacidade do link */
+}
+
+a:active {
+    /* define o estilo do link quando ele estiver sendo clicado */
+    opacity: 0.8;
+    /* aumenta a opacidade do link */
+}
+
+header {
+    margin: 24px 0 0 57px;
+    /* define a margem do header */
+}
+
+@media screen and (max-width: 900px) { /* define o estilo para telas com largura máxima de 900px */
+    .left-section {
+        width: 100%;
+        /* define a largura da seção esquerda para 100% */
+        height: 50%;
+        /* define a altura da seção esquerda para 50% */
+        padding: 0;
+        /* remove o preenchimento da seção esquerda */
+        margin: 0;
+        /* remove a margem da seção esquerda */
+    }
+
+    .right-section {
+        display: block;
+        /* define o layout como bloco */
+        height: auto;
+        /* define a altura da seção direita como automática */
+        width: 100%;
+        /* define a largura da seção direita para 100% */
+        position: static;
+        /* define a posição como estática */
+        padding: 40px;
+        /* define o preenchimento da seção direita */
+    }
+
+    img {
+        position: static;
+        /* define a posição da imagem como estática */
+        max-width: 90%;
+        /* define a largura máxima da imagem para 90% */
+    }
+
+    header {
+        display: none;
+        /* esconde o header */
+    }
+
+    h1 {
+        font-size: 36px;
+        /* define o tamanho da fonte do título para 36px */
+        line-height: 52px;
+        /* define a altura da linha do título para 52px */
+        width: auto;
+        /* define a largura do título para automática */
+        margin: 58px 50px 0 50px;
+        /* define a margem do título */
+        text-align: center;
+        /* alinha o texto do título ao centro */
+    }
+
+    p {
+        margin: 15px 40px;
+        /* define a margem do parágrafo */
+        width: auto;
+        /* define a largura do parágrafo para automática */
+        text-align: center;
+        /* alinha o texto do parágrafo ao centro */
+        font-size: 14px;
+        /* define o tamanho da fonte do parágrafo para 14px */
+        line-height: 24px;
+        /* define a altura da linha do parágrafo para 24px */
+    }
+
+    button {
+        display: block;
+        /* define o layout do botão como bloco */
+        margin: 0 auto;
+        /* centraliza o botão horizontalmente */
+    }
+
+    @media screen and (max-width: 330px) {
+        .left-section {
+            height: 70%;
+            /* define a altura da seção esquerda como 70% */
+        }
+    }
+}
